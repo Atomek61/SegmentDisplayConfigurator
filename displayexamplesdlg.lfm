@@ -1,0 +1,329 @@
+object DisplayExamplesDialog: TDisplayExamplesDialog
+  Left = 476
+  Height = 591
+  Top = 130
+  Width = 456
+  BorderStyle = bsDialog
+  Caption = 'Segment Displays Examples'
+  ClientHeight = 591
+  ClientWidth = 456
+  OnCreate = FormCreate
+  OnHide = FormHide
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '1.8.2.0'
+  object GroupBoxExample1: TGroupBox
+    Left = 16
+    Height = 105
+    Top = 8
+    Width = 193
+    Caption = 'Example 1 - Numeric Display'
+    ClientHeight = 85
+    ClientWidth = 189
+    TabOrder = 0
+    object PanelMouse: TPanel
+      Cursor = crCross
+      Left = 8
+      Height = 72
+      Top = 8
+      Width = 72
+      BevelOuter = bvNone
+      Caption = 'Move Mouse'
+      Color = 12879949
+      Font.Color = 14865325
+      Font.Height = -16
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 0
+      Wordwrap = True
+      OnMouseMove = PanelMouseMouseMove
+    end
+    object PanelDisplay1: TPanel
+      Left = 80
+      Height = 72
+      Top = 8
+      Width = 104
+      BevelOuter = bvLowered
+      Color = clBtnFace
+      ParentColor = False
+      TabOrder = 1
+    end
+  end
+  object GroupBoxExample2: TGroupBox
+    Left = 216
+    Height = 105
+    Top = 8
+    Width = 224
+    Caption = 'Example 2 - LCD Color Set'
+    ClientHeight = 85
+    ClientWidth = 220
+    TabOrder = 1
+    object PanelDisplay2: TPanel
+      Left = 8
+      Height = 56
+      Top = 9
+      Width = 88
+      BevelOuter = bvLowered
+      ClientHeight = 56
+      ClientWidth = 88
+      Color = 11979717
+      ParentColor = False
+      TabOrder = 0
+      object Label1: TLabel
+        Left = 1
+        Height = 15
+        Top = 1
+        Width = 86
+        Align = alTop
+        Caption = '  SOG'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object PanelSOG: TPanel
+        Left = 1
+        Height = 31
+        Top = 18
+        Width = 68
+        BevelOuter = bvNone
+        TabOrder = 0
+      end
+      object Label2: TLabel
+        Left = 71
+        Height = 15
+        Top = 36
+        Width = 14
+        Caption = 'kn'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TrackBarSOG: TTrackBar
+      Left = 112
+      Height = 25
+      Top = 28
+      Width = 100
+      Frequency = 20
+      LineSize = 50
+      Max = 200
+      OnChange = TrackBarSOGChange
+      Position = 127
+      TabOrder = 1
+    end
+  end
+  object GroupBoxExample3: TGroupBox
+    Left = 15
+    Height = 128
+    Top = 120
+    Width = 425
+    Caption = 'Example 3 - Clock (Inner Glow)'
+    ClientHeight = 108
+    ClientWidth = 421
+    TabOrder = 2
+    object PanelDisplay3: TPanel
+      Left = 72
+      Height = 106
+      Top = -2
+      Width = 288
+      BevelOuter = bvLowered
+      TabOrder = 0
+    end
+  end
+  object GroupBoxExample4: TGroupBox
+    Left = 16
+    Height = 90
+    Top = 256
+    Width = 240
+    Caption = 'Example 4 - Owner drawn Symbols'
+    ClientHeight = 70
+    ClientWidth = 236
+    TabOrder = 3
+    object PanelDisplay4: TPanel
+      Left = 8
+      Height = 64
+      Top = 0
+      Width = 216
+      BevelOuter = bvLowered
+      TabOrder = 0
+    end
+  end
+  object GroupBoxExample5: TGroupBox
+    Left = 16
+    Height = 76
+    Top = 352
+    Width = 424
+    Caption = 'Example 5 - Stopwatch (Style ss80th)'
+    ClientHeight = 56
+    ClientWidth = 420
+    TabOrder = 4
+    object PanelDisplay5: TPanel
+      Left = 8
+      Height = 48
+      Top = 0
+      Width = 336
+      BevelOuter = bvLowered
+      TabOrder = 0
+    end
+    object ToolBar1: TToolBar
+      Left = 352
+      Height = 24
+      Top = 15
+      Width = 22
+      Align = alNone
+      Caption = 'ToolBar1'
+      EdgeInner = esNone
+      EdgeOuter = esNone
+      Images = ImageListDisplay5
+      TabOrder = 1
+      object ToolButton1: TToolButton
+        Left = 1
+        Top = 0
+        Action = ActionStartStop
+      end
+    end
+  end
+  object GroupBoxExample6: TGroupBox
+    Left = 16
+    Height = 72
+    Top = 440
+    Width = 424
+    Caption = 'Example 6 - Symbols'
+    ClientHeight = 52
+    ClientWidth = 420
+    TabOrder = 5
+    object PanelDisplay6: TPanel
+      Left = 16
+      Height = 39
+      Top = 4
+      Width = 400
+      BevelOuter = bvLowered
+      TabOrder = 0
+    end
+  end
+  object GroupBoxDisplay7: TGroupBox
+    Left = 15
+    Height = 65
+    Top = 520
+    Width = 425
+    Caption = 'Example 7 - Colored LCD'
+    ClientHeight = 45
+    ClientWidth = 421
+    TabOrder = 6
+    object PanelDisplay71: TPanel
+      Left = 8
+      Height = 34
+      Top = 0
+      Width = 409
+      TabOrder = 0
+    end
+  end
+  object TimerDisplay3: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = TimerDisplay3Timer
+    left = 32
+    top = 160
+  end
+  object TimerDisplay4: TTimer
+    Enabled = False
+    Interval = 150
+    OnTimer = TimerDisplay4Timer
+    left = 48
+    top = 296
+  end
+  object ImageListDisplay5: TImageList
+    left = 135
+    top = 376
+    Bitmap = {
+      4C690200000010000000100000000000000000000000000000000000001F0000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000FF000000FF0000
+      0080000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000FF000000FF0000
+      00AF000000CF0000002F00000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000FF000000FF0000
+      00FF000000FF000000EF00000080000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000FF000000FF0000
+      00FF000000FF000000FF000000AF000000CF0000002F00000000000000000000
+      00000000000000000000000000000000000000000000000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000EF00000080000000000000
+      00000000000000000000000000000000000000000000000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000AF000000CF0000
+      002F0000000000000000000000000000000000000000000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      008F0000000000000000000000000000000000000000000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      008F0000000000000000000000000000000000000000000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000DF0000006F0000
+      00000000000000000000000000000000000000000000000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000DF0000002F000000000000
+      00000000000000000000000000000000000000000000000000FF000000FF0000
+      00FF000000FF000000FF000000BF0000009F0000000F00000000000000000000
+      00000000000000000000000000000000000000000000000000FF000000FF0000
+      00FF000000FF000000DF0000006F000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000FF000000FF0000
+      008F000000DF0000002F00000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000FF000000FF0000
+      008F0000000F0000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000000000000000000000000000000000000000000000000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000000000000000000000000000000000000000000000000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000000000000000000000000000000000000000000000000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000000000000000000000000000000000000000000000000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000000000000000000000000000000000000000000000000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000000000000000000000000000000000000000000000000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000000000000000000000000000000000000000000000000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000000000000000000000000000000000000000000000000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000000000000000000000000000000000000000000000000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000
+    }
+  end
+  object ActionListDisplay5: TActionList
+    Images = ImageListDisplay5
+    left = 93
+    top = 376
+    object ActionStartStop: TAction
+      ImageIndex = 0
+      OnExecute = ActionStartStopExecute
+    end
+  end
+  object TimerDisplay5: TTimer
+    Enabled = False
+    Interval = 50
+    OnTimer = TimerDisplay5Timer
+    left = 48
+    top = 379
+  end
+  object TimerDisplay7: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = TimerDisplay7Timer
+    left = 56
+    top = 448
+  end
+end
