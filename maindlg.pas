@@ -9,13 +9,14 @@ uses
   Graphics, Dialogs, StdCtrls, ExtCtrls, ColorBox, BGRABitmap, BGRABitmapTypes,
   BGRACanvas, BGRAPath, BGRASvg, BGRACanvas2D, BGRAUnits,
   Controls.SegmentDisplay, fgl, LCLType, StrUtils, Clipbrd,
-  BGRAGradientScanner, BGRATransform, SingleValueFrm, Types.Led;
+  BGRAGradientScanner, BGRATransform, SingleValueFrm, Types.Led, PreviewDlg;
 
 type
 
   { TMainDialog }
 
   TMainDialog = class(TForm)
+    Button1: TButton;
     ButtonExamples: TButton;
     Button2: TButton;
     Button3: TButton;
@@ -44,8 +45,7 @@ type
     Label7: TLabel;
     Label8: TLabel;
     Label9: TLabel;
-    PanelDisplay: TPanel;
-    PanelControls: TPanel;
+//    PanelControls: TPanel;
     PanelBackgroundColor: TPanel;
     PanelBrightColor: TPanel;
     PanelDarkColor: TPanel;
@@ -57,6 +57,7 @@ type
     EdgeRatioFrame: TSingleValueFrame;
     SlitRatioFrame: TSingleValueFrame;
     TiltRatioFrame: TSingleValueFrame;
+    procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure ButtonCopyClick(Sender: TObject);
     procedure ButtonExamplesClick(Sender: TObject);
@@ -97,6 +98,27 @@ const
   ALGINS :array[0..2] of TAlignment = (taLeftJustify, taCenter, taRightJustify);
 //  STYLES :array[TSegmentStyle] of string= ('', '', '', '');
 
+const
+  CODETEMPLATE =
+    'with SegmentDisplay do begin' + #13#10 +
+    '  Padding   := %PADDING%;' + #13#10 +
+    '  GapRatio  := %GAPRATIO%;' + #13#10 +
+    '  Alignment := %ALIGNMENT%;' + #13#10 +
+    '  with Design do begin' + #13#10 +
+    '    ModuleRatio      := %MODULERATIO%;' + #13#10 +
+    '    SegmentRatio     := %SEGMENTRATIO%;' + #13#10 +
+    '    SlitRatio        := %SLITRATIO%;' + #13#10 +
+    '    TiltRatio        := %TILTRATIO%;' + #13#10 +
+    '    EdgeRatio        := %EDGERATIO%;' + #13#10 +
+    '    DarkVisible      := %DARKVISIBLE%;' + #13#10 +
+    '    InnerGlow        := %INNERGLOW%;' + #13#10 +
+    '    Style            := %STYLE%;' + #13#10 +
+    '    BackgroundColor  := %BACKGROUNDCOLOR%;' + #13#10 +
+    '    BrightColor      := %BRIGHTCOLOR%;' + #13#10 +
+    '    DarkColor        := %DARKCOLOR%;' + #13#10 +
+    '  end;' + #13#10 +
+    'end;' + #13#10;
+
 implementation
 
 uses
@@ -104,14 +126,78 @@ uses
 
 {$R *.lfm}
 
+function BuildCode(Control :TSegmentDisplay): string;
+var
+  Code :string;
+  CodeFormatSettings :TFormatSettings;
+
+  procedure ReplaceFloat(const Variable :string; Value :single);
+  begin
+    Code := StringReplace(Code, Variable, Format('%.4f', [Value], CodeFormatSettings), []);
+  end;
+
+  procedure ReplaceInteger(const Variable :string; Value :integer);
+  begin
+    Code := StringReplace(Code, Variable, Format('%d', [Value]), []);
+  end;
+
+  procedure ReplaceColor(const Variable :string; Value :TColor);
+  begin
+    Code := StringReplace(Code, Variable, Format('$%6.6x', [ColorToRGB(Value)]), []);
+  end;
+
+  procedure ReplaceBoolean(const Variable :string; Value :boolean);
+  const
+    FALSETRUE :array[boolean] of string = ('false', 'true');
+  begin
+    Code := StringReplace(Code, Variable, FALSETRUE[Value], []);
+  end;
+
+  procedure ReplaceStyle(const Variable :string; Value :TSegmentStyle);
+  const
+    STYLES :array[TSegmentStyle] of string = ('ssClassic', 'ssBlock', 'ss80th');
+  begin
+    Code := StringReplace(Code, Variable, STYLES[Value], []);
+  end;
+
+  procedure ReplaceAlignment(const Variable :string; Value :TAlignment);
+  const
+    ALIGNMENTS :array[TAlignment] of string = ('taLeftJustify', 'taRightJustify', 'taCenter');
+  begin
+    Code := StringReplace(Code, Variable, ALIGNMENTS[Value], []);
+  end;
+
+begin
+  CodeFormatSettings := DefaultFormatSettings;
+  CodeFormatSettings.DecimalSeparator := '.';
+
+  Code := CODETEMPLATE;
+  ReplaceAlignment('%ALIGNMENT%', Control.Alignment);
+  ReplaceInteger('%PADDING%', Control.Padding);
+  ReplaceFloat('%GAPRATIO%', Control.GapRatio);
+
+  ReplaceFloat('%MODULERATIO%', Control.Design.ModuleRatio);
+  ReplaceFloat('%SEGMENTRATIO%', Control.Design.SegmentRatio);
+  ReplaceFloat('%SLITRATIO%', Control.Design.SlitRatio);
+  ReplaceFloat('%TILTRATIO%', Control.Design.TiltRatio);
+  ReplaceFloat('%EDGERATIO%', Control.Design.EdgeRatio);
+  ReplaceBoolean('%INNERGLOW%', Control.Design.InnerGlow);
+  ReplaceBoolean('%DARKVISIBLE%', Control.Design.DarkVisible);
+  ReplaceColor('%BACKGROUNDCOLOR%', Control.Design.BackgroundColor);
+  ReplaceColor('%BRIGHTCOLOR%', Control.Design.BrightColor);
+  ReplaceColor('%DARKCOLOR%', Control.Design.DarkColor);
+  ReplaceStyle('%STYLE%', Control.Design.Style);
+
+  result := Code;
+end;
+
 { TMainDialog }
 
 procedure TMainDialog.FormCreate(Sender: TObject);
 begin
+
   Display := TSegmentDisplay.Create(self);
-  Display.Parent := PanelDisplay;
   Display.Align := alClient;
-  Display.Visible := true;
   Display.Modules := '8.8.8.8.';
   Display.Text := ' 12.3';
   Display.OnChanged := @OnDisplayChanged;
@@ -149,7 +235,7 @@ begin
   PanelBackgroundColor.Color := Display.Design.BackgroundColor;
   PanelBrightColor.Color := Display.Design.BrightColor;
   PanelDarkColor.Color := Display.Design.DarkColor;
-  EditCode.Lines.Text := Display.BuildCode;
+  EditCode.Lines.Text := BuildCode(Display);
 end;
 
 procedure TMainDialog.OnGapRatioChanged(Sender: TObject);
@@ -204,6 +290,16 @@ begin
     2: Display.Design.DarkColor := ColorDialog.Color;
     end;
   end;
+end;
+
+procedure TMainDialog.Button1Click(Sender: TObject);
+var
+  i :integer;
+  Bmp :TBitmap;
+begin
+  Bmp := TBitmap.Create;
+//  Bmp.SetSize(PanelDisplay.ClientWidth, round(PanelDisplay.ClientHeight*4));
+//  Display.Draw
 end;
 
 procedure TMainDialog.ButtonCopyClick(Sender: TObject);

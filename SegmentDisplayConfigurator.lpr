@@ -1,4 +1,4 @@
-program SegmentDisplayDemo;
+program SegmentDisplayConfigurator;
 
 {$mode objfpc}{$H+}
 
@@ -7,7 +7,7 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, MainDlg, SingleValueFrm, DisplayExamplesDlg, Value1Frm;
+  Forms, MainDlg, SingleValueFrm, DisplayExamplesDlg, PreviewDlg;
   { you can add units after this }
 
 {$R *.res}
@@ -17,6 +17,7 @@ begin
   Application.Initialize;
   Application.CreateForm(TMainDialog, MainDialog);
   Application.CreateForm(TDisplayExamplesDialog, DisplayExamplesDialog);
+  Application.CreateForm(TPreviewDialog, PreviewDialog);
   Application.Run;
 end.
 

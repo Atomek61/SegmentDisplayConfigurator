@@ -1,16 +1,16 @@
 object DisplayExamplesDialog: TDisplayExamplesDialog
-  Left = 476
+  Left = 184
   Height = 591
-  Top = 130
+  Top = 228
   Width = 456
   BorderStyle = bsDialog
-  Caption = 'Segment Displays Examples'
+  Caption = 'SegmentDisplay Examples'
   ClientHeight = 591
   ClientWidth = 456
   OnCreate = FormCreate
   OnHide = FormHide
   OnShow = FormShow
-  Position = poMainFormCenter
+  Position = poDesktopCenter
   LCLVersion = '1.8.2.0'
   object GroupBoxExample1: TGroupBox
     Left = 16

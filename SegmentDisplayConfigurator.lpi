@@ -6,7 +6,7 @@
     <General>
       <SessionStorage Value="InProjectDir"/>
       <MainUnit Value="0"/>
-      <Title Value="SegmentDisplayDemo"/>
+      <Title Value="SegmentDisplayConfigurator"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
       <Icon Value="0"/>
@@ -34,9 +34,9 @@
         <PackageName Value="LCL"/>
       </Item3>
     </RequiredPackages>
-    <Units Count="8">
+    <Units Count="7">
       <Unit0>
-        <Filename Value="SegmentDisplayDemo.lpr"/>
+        <Filename Value="SegmentDisplayConfigurator.lpr"/>
         <IsPartOfProject Value="True"/>
       </Unit0>
       <Unit1>
@@ -69,29 +69,25 @@
         <UnitName Value="DisplayExamplesDlg"/>
       </Unit4>
       <Unit5>
-        <Filename Value="value1frm.pas"/>
+        <Filename Value="..\ATOMEK.Controls\controls.segmentdisplay.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Frame1"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Frame"/>
-        <UnitName Value="Value1Frm"/>
+        <UnitName Value="Controls.SegmentDisplay"/>
       </Unit5>
       <Unit6>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
+        <Filename Value="previewdlg.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="PreviewDialog"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="PreviewDlg"/>
       </Unit6>
-      <Unit7>
-        <Filename Value="types.led.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="Types.Led"/>
-      </Unit7>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="SegmentDisplayDemo"/>
+      <Filename Value="SegmentDisplayConfigurator"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>

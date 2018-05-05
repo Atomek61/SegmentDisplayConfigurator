@@ -4,14 +4,14 @@
     <PathDelim Value="\"/>
     <Version Value="10"/>
     <BuildModes Active="Default"/>
-    <Units Count="55">
+    <Units Count="58">
       <Unit0>
-        <Filename Value="SegmentDisplayDemo.lpr"/>
+        <Filename Value="SegmentDisplayConfigurator.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <CursorPos X="64" Y="10"/>
-        <UsageCount Value="198"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="54" Y="10"/>
+        <UsageCount Value="203"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -21,144 +21,183 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MainDlg"/>
-        <CursorPos X="64" Y="12"/>
-        <UsageCount Value="198"/>
+        <CursorPos Y="13"/>
+        <UsageCount Value="203"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
-        <Filename Value="controls.ledmodules.pas"/>
-        <UnitName Value="Controls.LedModules"/>
-        <EditorIndex Value="6"/>
-        <CursorPos X="10" Y="19"/>
-        <UsageCount Value="188"/>
-        <Loaded Value="True"/>
-      </Unit2>
-      <Unit3>
         <Filename Value="bgragraphics.minipath.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="BGRAGraphics.MiniPath"/>
         <EditorIndex Value="-1"/>
-        <CursorPos Y="24"/>
-        <UsageCount Value="187"/>
-      </Unit3>
-      <Unit4>
+        <TopLine Value="3"/>
+        <CursorPos X="64" Y="15"/>
+        <UsageCount Value="203"/>
+      </Unit2>
+      <Unit3>
         <Filename Value="singlevaluefrm.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="SingleValueFrame"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
         <UnitName Value="SingleValueFrm"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="63"/>
         <CursorPos X="53" Y="91"/>
-        <UsageCount Value="82"/>
+        <UsageCount Value="102"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
-      </Unit4>
-      <Unit5>
+      </Unit3>
+      <Unit4>
         <Filename Value="displayexamplesdlg.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="DisplayExamplesDialog"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="DisplayExamplesDlg"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="263"/>
-        <CursorPos Y="265"/>
-        <UsageCount Value="52"/>
+        <CursorPos X="19" Y="268"/>
+        <UsageCount Value="72"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\ATOMEK.Controls\controls.segmentdisplay.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Controls.SegmentDisplay"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="75"/>
+        <CursorPos Y="90"/>
+        <UsageCount Value="45"/>
+        <Loaded Value="True"/>
       </Unit5>
       <Unit6>
-        <Filename Value="value1frm.pas"/>
+        <Filename Value="previewdlg.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="PreviewDialog"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="PreviewDlg"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="10"/>
+        <CursorPos X="58" Y="9"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="value1frm.pas"/>
         <ComponentName Value="Frame1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
         <UnitName Value="Value1Frm"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="43"/>
-      </Unit6>
-      <Unit7>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <IsPartOfProject Value="True"/>
-        <EditorIndex Value="8"/>
-        <CursorPos Y="121"/>
-        <UsageCount Value="25"/>
-        <Loaded Value="True"/>
+        <CursorPos X="25" Y="5"/>
+        <UsageCount Value="63"/>
       </Unit7>
       <Unit8>
+        <Filename Value="displaydlg.pas"/>
+        <ComponentName Value="PreviewDialog"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="DisplayDlg"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="5"/>
+        <CursorPos X="85" Y="9"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="types.led.pas"/>
+        <UnitName Value="Types.Led"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5"/>
+        <CursorPos X="21" Y="8"/>
+        <UsageCount Value="36"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="controls.ledmodules.pas"/>
+        <UnitName Value="Controls.LedModules"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="22"/>
+        <CursorPos X="10" Y="19"/>
+        <UsageCount Value="188"/>
+        <Loaded Value="True"/>
+      </Unit10>
+      <Unit11>
         <Filename Value="..\..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="34"/>
         <CursorPos X="12" Y="53"/>
-        <UsageCount Value="153"/>
+        <UsageCount Value="151"/>
         <Bookmarks Count="1">
           <Item0 Y="165"/>
         </Bookmarks>
-      </Unit8>
-      <Unit9>
+      </Unit11>
+      <Unit12>
         <Filename Value="D:\TEMP\bgrabitmap-master\bgrabitmap\bgracanvas.pas"/>
         <UnitName Value="BGRACanvas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="34" Y="191"/>
-        <UsageCount Value="7"/>
-      </Unit9>
-      <Unit10>
+        <UsageCount Value="5"/>
+      </Unit12>
+      <Unit13>
         <Filename Value="D:\TEMP\bgrabitmap-master\bgrabitmap\bgrapath.pas"/>
         <UnitName Value="BGRAPath"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="164"/>
         <CursorPos Y="231"/>
-        <UsageCount Value="7"/>
-      </Unit10>
-      <Unit11>
+        <UsageCount Value="5"/>
+      </Unit13>
+      <Unit14>
         <Filename Value="D:\Programme\Lazarus\fpc\3.0.4\source\packages\fcl-image\src\fpcanvas.pp"/>
         <UnitName Value="FPCanvas"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="212"/>
         <CursorPos X="3" Y="231"/>
-        <UsageCount Value="19"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
-      </Unit11>
-      <Unit12>
+      </Unit14>
+      <Unit15>
         <Filename Value="..\..\BGRABITMAP\bgracanvas.pas"/>
         <UnitName Value="BGRACanvas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="133"/>
         <CursorPos X="3" Y="98"/>
-        <UsageCount Value="42"/>
-      </Unit12>
-      <Unit13>
+        <UsageCount Value="40"/>
+      </Unit15>
+      <Unit16>
         <Filename Value="..\..\BGRABITMAP\bgrapath.pas"/>
         <UnitName Value="BGRAPath"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="212"/>
         <CursorPos X="3" Y="120"/>
-        <UsageCount Value="27"/>
-      </Unit13>
-      <Unit14>
+        <UsageCount Value="25"/>
+      </Unit16>
+      <Unit17>
         <Filename Value="..\..\BGRABITMAP\bgrapixel.inc"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="30"/>
-      </Unit14>
-      <Unit15>
+        <UsageCount Value="28"/>
+      </Unit17>
+      <Unit18>
         <Filename Value="..\..\BGRABITMAP\basiccolorspace.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="203"/>
         <CursorPos X="3" Y="205"/>
-        <UsageCount Value="3"/>
-      </Unit15>
-      <Unit16>
+        <UsageCount Value="1"/>
+      </Unit18>
+      <Unit19>
         <Filename Value="..\..\BGRABITMAP\bgradefaultbitmap.pas"/>
         <UnitName Value="BGRADefaultBitmap"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="3081"/>
         <CursorPos X="31" Y="3092"/>
-        <UsageCount Value="52"/>
-      </Unit16>
-      <Unit17>
+        <UsageCount Value="50"/>
+      </Unit19>
+      <Unit20>
         <Filename Value="D:\TEMP\bgrabitmap-master\makedoc\unit1.pas"/>
         <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
@@ -167,404 +206,396 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="126"/>
         <CursorPos X="32" Y="14"/>
-        <UsageCount Value="7"/>
-      </Unit17>
-      <Unit18>
+        <UsageCount Value="5"/>
+      </Unit20>
+      <Unit21>
         <Filename Value="..\..\BGRABITMAP\geometrytypes.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="476"/>
         <CursorPos X="3" Y="495"/>
-        <UsageCount Value="42"/>
-      </Unit18>
-      <Unit19>
+        <UsageCount Value="40"/>
+      </Unit21>
+      <Unit22>
         <Filename Value="D:\Programme\Lazarus\fpc\3.0.4\source\rtl\objpas\types.pp"/>
         <UnitName Value="Types"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="41" Y="5"/>
-        <UsageCount Value="17"/>
-      </Unit19>
-      <Unit20>
+        <UsageCount Value="15"/>
+      </Unit22>
+      <Unit23>
         <Filename Value="..\..\BGRABITMAP\bgraresample.pas"/>
         <UnitName Value="BGRAResample"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="63"/>
         <CursorPos X="10" Y="87"/>
-        <UsageCount Value="2"/>
-      </Unit20>
-      <Unit21>
-        <Filename Value="..\..\BGRABITMAP\bgracanvas2d.pas"/>
-        <UnitName Value="BGRACanvas2D"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="187"/>
-        <CursorPos Y="252"/>
-        <UsageCount Value="1"/>
-      </Unit21>
-      <Unit22>
+        <UsageCount Value="10"/>
+      </Unit23>
+      <Unit24>
         <Filename Value="..\..\ATOMEK.Controls\Controls.Blinker.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="5"/>
-        <UsageCount Value="12"/>
-      </Unit22>
-      <Unit23>
+        <UsageCount Value="10"/>
+      </Unit24>
+      <Unit25>
         <Filename Value="..\..\ATOMEK.Models\models.core.pas"/>
         <UnitName Value="Models.Core"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="42" Y="9"/>
-        <UsageCount Value="12"/>
-      </Unit23>
-      <Unit24>
+        <UsageCount Value="10"/>
+      </Unit25>
+      <Unit26>
         <Filename Value="..\..\BGRABITMAP\bgrabitmaptypes.pas"/>
         <UnitName Value="BGRABitmapTypes"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="989"/>
         <CursorPos X="28" Y="1017"/>
-        <UsageCount Value="12"/>
-      </Unit24>
-      <Unit25>
+        <UsageCount Value="10"/>
+      </Unit26>
+      <Unit27>
         <Filename Value="..\..\BGRABITMAP\bgrabitmap.pas"/>
         <UnitName Value="BGRABitmap"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="69"/>
         <CursorPos X="9" Y="88"/>
-        <UsageCount Value="37"/>
-      </Unit25>
-      <Unit26>
+        <UsageCount Value="35"/>
+      </Unit27>
+      <Unit28>
         <Filename Value="..\..\..\Dl18\ATOMEK\LedFns.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="4" Y="18"/>
-        <UsageCount Value="7"/>
-      </Unit26>
-      <Unit27>
+        <UsageCount Value="5"/>
+      </Unit28>
+      <Unit29>
         <Filename Value="D:\Programme\Lazarus\lcl\controls.pp"/>
         <UnitName Value="Controls"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1196"/>
         <CursorPos Y="1233"/>
-        <UsageCount Value="71"/>
-      </Unit27>
-      <Unit28>
+        <UsageCount Value="69"/>
+      </Unit29>
+      <Unit30>
         <Filename Value="D:\Programme\Lazarus\lcl\graphics.pp"/>
         <UnitName Value="Graphics"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="1028"/>
         <CursorPos X="3" Y="1047"/>
-        <UsageCount Value="30"/>
+        <UsageCount Value="39"/>
         <Loaded Value="True"/>
-      </Unit28>
-      <Unit29>
+      </Unit30>
+      <Unit31>
         <Filename Value="D:\Programme\Lazarus\fpc\3.0.4\source\rtl\objpas\classes\classesh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="411"/>
         <CursorPos X="3" Y="428"/>
-        <UsageCount Value="63"/>
-      </Unit29>
-      <Unit30>
+        <UsageCount Value="61"/>
+      </Unit31>
+      <Unit32>
         <Filename Value="D:\Programme\Lazarus\fpc\3.0.4\source\rtl\objpas\fgl.pp"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="134"/>
         <CursorPos X="11" Y="153"/>
-        <UsageCount Value="47"/>
-      </Unit30>
-      <Unit31>
+        <UsageCount Value="45"/>
+      </Unit32>
+      <Unit33>
         <Filename Value="..\..\BGRABITMAP\bgratransform.pas"/>
         <UnitName Value="BGRATransform"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="46"/>
         <CursorPos X="15" Y="63"/>
-        <UsageCount Value="39"/>
-      </Unit31>
-      <Unit32>
+        <UsageCount Value="37"/>
+      </Unit33>
+      <Unit34>
         <Filename Value="..\..\BGRABITMAP\bgrawinbitmap.pas"/>
         <UnitName Value="BGRAWinBitmap"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="41"/>
         <CursorPos X="3" Y="36"/>
-        <UsageCount Value="29"/>
-      </Unit32>
-      <Unit33>
-        <Filename Value="..\..\BGRABITMAP\bgralclbitmap.pas"/>
-        <UnitName Value="BGRALCLBitmap"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="3" Y="13"/>
-        <UsageCount Value="1"/>
-      </Unit33>
-      <Unit34>
+        <UsageCount Value="27"/>
+      </Unit34>
+      <Unit35>
         <Filename Value="..\..\BGRABITMAP\bgracustombitmap.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="227"/>
         <CursorPos X="15" Y="246"/>
-        <UsageCount Value="38"/>
-      </Unit34>
-      <Unit35>
+        <UsageCount Value="36"/>
+      </Unit35>
+      <Unit36>
         <Filename Value="D:\Programme\Lazarus\lcl\include\control.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="2080"/>
         <CursorPos Y="2100"/>
-        <UsageCount Value="53"/>
-      </Unit35>
-      <Unit36>
+        <UsageCount Value="51"/>
+      </Unit36>
+      <Unit37>
         <Filename Value="D:\Programme\Lazarus\lcl\extctrls.pp"/>
         <UnitName Value="ExtCtrls"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="346"/>
         <CursorPos X="29" Y="378"/>
-        <UsageCount Value="28"/>
-      </Unit36>
-      <Unit37>
+        <UsageCount Value="26"/>
+      </Unit37>
+      <Unit38>
         <Filename Value="D:\Programme\Lazarus\lcl\stdctrls.pp"/>
         <UnitName Value="StdCtrls"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="687"/>
         <CursorPos X="37" Y="716"/>
-        <UsageCount Value="28"/>
-      </Unit37>
-      <Unit38>
+        <UsageCount Value="26"/>
+      </Unit38>
+      <Unit39>
         <Filename Value="D:\Programme\Lazarus\lcl\lclclasses.pp"/>
         <UnitName Value="LCLClasses"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="25"/>
         <CursorPos X="3" Y="42"/>
-        <UsageCount Value="24"/>
-      </Unit38>
-      <Unit39>
+        <UsageCount Value="22"/>
+      </Unit39>
+      <Unit40>
         <Filename Value="D:\Programme\Lazarus\lcl\include\graphiccontrol.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="38"/>
         <CursorPos Y="60"/>
-        <UsageCount Value="37"/>
-      </Unit39>
-      <Unit40>
+        <UsageCount Value="35"/>
+      </Unit40>
+      <Unit41>
         <Filename Value="D:\Programme\Lazarus\fpc\3.0.4\source\rtl\objpas\classes\persist.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="52"/>
         <CursorPos X="3" Y="52"/>
-        <UsageCount Value="4"/>
-      </Unit40>
-      <Unit41>
-        <Filename Value="D:\Programme\Lazarus\fpc\3.0.4\source\packages\rtl-objpas\src\inc\strutils.pp"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="36"/>
+        <UsageCount Value="2"/>
       </Unit41>
       <Unit42>
+        <Filename Value="D:\Programme\Lazarus\fpc\3.0.4\source\packages\rtl-objpas\src\inc\strutils.pp"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="34"/>
+      </Unit42>
+      <Unit43>
         <Filename Value="D:\Programme\Lazarus\fpc\3.0.4\source\rtl\objpas\sysutils\sysstrh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="111"/>
         <CursorPos X="10" Y="128"/>
-        <UsageCount Value="36"/>
-      </Unit42>
-      <Unit43>
+        <UsageCount Value="34"/>
+      </Unit43>
+      <Unit44>
         <Filename Value="D:\Programme\Lazarus\fpc\3.0.4\source\rtl\objpas\sysutils\sysinth.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="16"/>
         <CursorPos X="3" Y="33"/>
-        <UsageCount Value="36"/>
-      </Unit43>
-      <Unit44>
+        <UsageCount Value="34"/>
+      </Unit44>
+      <Unit45>
         <Filename Value="D:\Programme\Lazarus\lcl\dialogs.pp"/>
         <UnitName Value="Dialogs"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="378"/>
         <CursorPos X="3" Y="246"/>
-        <UsageCount Value="35"/>
-      </Unit44>
-      <Unit45>
+        <UsageCount Value="33"/>
+      </Unit45>
+      <Unit46>
         <Filename Value="..\..\BGRABITMAP\bgragradientscanner.pas"/>
         <UnitName Value="BGRAGradientScanner"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="130"/>
         <CursorPos X="17" Y="130"/>
-        <UsageCount Value="42"/>
-      </Unit45>
-      <Unit46>
-        <Filename Value="maindlg.lfm"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="915"/>
-        <CursorPos X="30" Y="927"/>
-        <UsageCount Value="10"/>
-        <DefaultSyntaxHighlighter Value="LFM"/>
+        <UsageCount Value="40"/>
       </Unit46>
       <Unit47>
+        <Filename Value="maindlg.lfm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="988"/>
+        <CursorPos X="8" Y="994"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit47>
+      <Unit48>
         <Filename Value="D:\Programme\Lazarus\lcl\include\winapi.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="806"/>
         <CursorPos X="7" Y="842"/>
-        <UsageCount Value="24"/>
-      </Unit47>
-      <Unit48>
+        <UsageCount Value="22"/>
+      </Unit48>
+      <Unit49>
         <Filename Value="D:\Programme\Lazarus\lcl\include\wincontrol.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="6754"/>
         <CursorPos Y="6773"/>
-        <UsageCount Value="24"/>
-      </Unit48>
-      <Unit49>
+        <UsageCount Value="22"/>
+      </Unit49>
+      <Unit50>
         <Filename Value="D:\Programme\Lazarus\lcl\include\customcontrol.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="94"/>
         <CursorPos Y="113"/>
-        <UsageCount Value="24"/>
-      </Unit49>
-      <Unit50>
+        <UsageCount Value="22"/>
+      </Unit50>
+      <Unit51>
         <Filename Value="D:\Programme\Lazarus\lcl\include\brush.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="7"/>
         <CursorPos Y="37"/>
-        <UsageCount Value="23"/>
-      </Unit50>
-      <Unit51>
+        <UsageCount Value="21"/>
+      </Unit51>
+      <Unit52>
         <Filename Value="..\..\BGRABITMAP\bgragraphics.pas"/>
         <UnitName Value="BGRAGraphics"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="178"/>
         <CursorPos X="12" Y="210"/>
-        <UsageCount Value="17"/>
-      </Unit51>
-      <Unit52>
-        <Filename Value="D:\Programme\Lazarus\fpc\3.0.4\source\rtl\inc\mathh.inc"/>
-        <EditorIndex Value="10"/>
-        <TopLine Value="75"/>
-        <CursorPos X="14" Y="93"/>
-        <UsageCount Value="16"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="15"/>
       </Unit52>
       <Unit53>
-        <Filename Value="doc\controls.segmentdisplay.xml"/>
-        <EditorIndex Value="9"/>
-        <UsageCount Value="12"/>
-        <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="XML"/>
+        <Filename Value="D:\Programme\Lazarus\fpc\3.0.4\source\rtl\inc\mathh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="75"/>
+        <CursorPos X="14" Y="93"/>
+        <UsageCount Value="25"/>
       </Unit53>
       <Unit54>
-        <Filename Value="types.led.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="Types.Led"/>
-        <EditorIndex Value="7"/>
-        <TopLine Value="5"/>
-        <CursorPos X="21" Y="8"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
+        <Filename Value="doc\controls.segmentdisplay.xml"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
       </Unit54>
+      <Unit55>
+        <Filename Value="D:\Programme\Lazarus\lcl\lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="36" Y="393"/>
+        <UsageCount Value="19"/>
+      </Unit55>
+      <Unit56>
+        <Filename Value="..\ATOMEK.Controls\types.led.pas"/>
+        <UnitName Value="Types.Led"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="31"/>
+        <CursorPos X="12" Y="50"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit56>
+      <Unit57>
+        <Filename Value="..\ATOMEK.Controls\codebuilder.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="24" Y="8"/>
+        <UsageCount Value="20"/>
+      </Unit57>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="29" HistoryIndex="28">
       <Position1>
-        <Filename Value="maindlg.pas"/>
-        <Caret Line="241" Column="3" TopLine="222"/>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="21" Column="31" TopLine="7"/>
       </Position1>
       <Position2>
-        <Filename Value="maindlg.pas"/>
-        <Caret Line="118" Column="53" TopLine="99"/>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="18"/>
       </Position2>
       <Position3>
-        <Filename Value="maindlg.pas"/>
-        <Caret Line="131" Column="3" TopLine="129"/>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="49" Column="15" TopLine="18"/>
       </Position3>
       <Position4>
-        <Filename Value="maindlg.pas"/>
-        <Caret Line="287" Column="3" TopLine="253"/>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="38" Column="10" TopLine="16"/>
       </Position4>
       <Position5>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="90" TopLine="61"/>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="42" TopLine="17"/>
       </Position5>
       <Position6>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="74" TopLine="54"/>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="9" Column="30"/>
       </Position6>
       <Position7>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="1351" TopLine="1351"/>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="56" Column="12" TopLine="24"/>
       </Position7>
       <Position8>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="401" TopLine="363"/>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="10" Column="31"/>
       </Position8>
       <Position9>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="302" TopLine="286"/>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="47" Column="31" TopLine="28"/>
       </Position9>
       <Position10>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="1249" TopLine="1236"/>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="31" Column="8" TopLine="28"/>
       </Position10>
       <Position11>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="1521" Column="5" TopLine="1483"/>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="50" Column="15" TopLine="28"/>
       </Position11>
       <Position12>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="321" Column="29" TopLine="286"/>
+        <Filename Value="maindlg.pas"/>
+        <Caret Line="38" Column="14" TopLine="32"/>
       </Position12>
       <Position13>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="114" Column="3" TopLine="95"/>
+        <Filename Value="maindlg.pas"/>
+        <Caret Line="12" Column="22"/>
       </Position13>
       <Position14>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="1521" Column="4" TopLine="1483"/>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="55" Column="33" TopLine="30"/>
       </Position14>
       <Position15>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="657" TopLine="620"/>
+        <Filename Value="maindlg.pas"/>
+        <Caret Line="12" Column="22"/>
       </Position15>
       <Position16>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="63" TopLine="33"/>
       </Position16>
       <Position17>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="288" TopLine="275"/>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="62" Column="41" TopLine="36"/>
       </Position17>
       <Position18>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="677" TopLine="649"/>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="47" Column="10" TopLine="37"/>
       </Position18>
       <Position19>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="292" TopLine="259"/>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="21" Column="5" TopLine="5"/>
       </Position19>
       <Position20>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="270" TopLine="255"/>
+        <Filename Value="maindlg.pas"/>
+        <Caret Line="253" Column="14" TopLine="246"/>
       </Position20>
       <Position21>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="250" TopLine="220"/>
+        <Filename Value="..\ATOMEK.Controls\controls.segmentdisplay.pas"/>
+        <Caret Line="90" TopLine="75"/>
       </Position21>
       <Position22>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="33" Column="5" TopLine="14"/>
+        <Filename Value="..\ATOMEK.Controls\controls.segmentdisplay.pas"/>
+        <Caret Line="575" Column="27" TopLine="530"/>
       </Position22>
       <Position23>
-        <Filename Value="displayexamplesdlg.pas"/>
-        <Caret Line="328" Column="31" TopLine="23"/>
+        <Filename Value="..\ATOMEK.Controls\controls.segmentdisplay.pas"/>
+        <Caret Line="236" Column="26" TopLine="223"/>
       </Position23>
       <Position24>
-        <Filename Value="displayexamplesdlg.pas"/>
-        <Caret Line="266" TopLine="264"/>
+        <Filename Value="maindlg.pas"/>
+        <Caret Line="191" TopLine="166"/>
       </Position24>
       <Position25>
-        <Filename Value="displayexamplesdlg.pas"/>
-        <Caret Line="265" TopLine="263"/>
+        <Filename Value="maindlg.pas"/>
+        <Caret Line="189" Column="34" TopLine="117"/>
       </Position25>
       <Position26>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="205" TopLine="178"/>
+        <Filename Value="..\ATOMEK.Controls\controls.segmentdisplay.pas"/>
+        <Caret Line="90" TopLine="75"/>
       </Position26>
       <Position27>
-        <Filename Value="types.led.pas"/>
-        <Caret Line="51" TopLine="19"/>
+        <Filename Value="maindlg.pas"/>
+        <Caret Line="190" Column="3" TopLine="163"/>
       </Position27>
       <Position28>
-        <Filename Value="..\ATOMEK.Controls\Controls.SegmentDisplay.pas"/>
-        <Caret Line="121"/>
+        <Filename Value="maindlg.pas"/>
+        <Caret Line="177" Column="38" TopLine="163"/>
       </Position28>
       <Position29>
-        <Filename Value="types.led.pas"/>
-        <Caret Line="8" Column="21" TopLine="5"/>
-      </Position29>
-      <Position30>
         <Filename Value="maindlg.pas"/>
-        <Caret Line="12" Column="64"/>
-      </Position30>
+        <Caret Line="189" Column="41" TopLine="164"/>
+      </Position29>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>
