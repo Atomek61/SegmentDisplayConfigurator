@@ -16,7 +16,6 @@ type
   { TMainDialog }
 
   TMainDialog = class(TForm)
-    Button1: TButton;
     ButtonExamples: TButton;
     Button2: TButton;
     Button3: TButton;
@@ -57,7 +56,6 @@ type
     EdgeRatioFrame: TSingleValueFrame;
     SlitRatioFrame: TSingleValueFrame;
     TiltRatioFrame: TSingleValueFrame;
-    procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure ButtonCopyClick(Sender: TObject);
     procedure ButtonExamplesClick(Sender: TObject);
@@ -290,16 +288,6 @@ begin
     2: Display.Design.DarkColor := ColorDialog.Color;
     end;
   end;
-end;
-
-procedure TMainDialog.Button1Click(Sender: TObject);
-var
-  i :integer;
-  Bmp :TBitmap;
-begin
-  Bmp := TBitmap.Create;
-//  Bmp.SetSize(PanelDisplay.ClientWidth, round(PanelDisplay.ClientHeight*4));
-//  Display.Draw
 end;
 
 procedure TMainDialog.ButtonCopyClick(Sender: TObject);

@@ -884,15 +884,6 @@ object MainDialog: TMainDialog
       OnClick = ButtonCopyClick
       TabOrder = 1
     end
-    object Button1: TButton
-      Left = 184
-      Height = 25
-      Top = 256
-      Width = 75
-      Caption = 'Button1'
-      OnClick = Button1Click
-      TabOrder = 2
-    end
   end
   object GroupBoxLayout: TGroupBox
     Left = 200

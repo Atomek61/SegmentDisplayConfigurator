@@ -8,9 +8,8 @@
       <Unit0>
         <Filename Value="SegmentDisplayConfigurator.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
-        <CursorPos X="54" Y="10"/>
+        <CursorPos X="13" Y="9"/>
         <UsageCount Value="203"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -21,7 +20,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MainDlg"/>
-        <CursorPos Y="13"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="274"/>
+        <CursorPos Y="278"/>
         <UsageCount Value="203"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -479,123 +480,127 @@
         <UsageCount Value="20"/>
       </Unit57>
     </Units>
-    <JumpHistory Count="29" HistoryIndex="28">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="displaydlg.pas"/>
-        <Caret Line="21" Column="31" TopLine="7"/>
+        <Caret Line="42" TopLine="17"/>
       </Position1>
       <Position2>
         <Filename Value="displaydlg.pas"/>
-        <Caret Line="18"/>
+        <Caret Line="9" Column="30"/>
       </Position2>
       <Position3>
         <Filename Value="displaydlg.pas"/>
-        <Caret Line="49" Column="15" TopLine="18"/>
+        <Caret Line="56" Column="12" TopLine="24"/>
       </Position3>
       <Position4>
         <Filename Value="displaydlg.pas"/>
-        <Caret Line="38" Column="10" TopLine="16"/>
+        <Caret Line="10" Column="31"/>
       </Position4>
       <Position5>
         <Filename Value="displaydlg.pas"/>
-        <Caret Line="42" TopLine="17"/>
+        <Caret Line="47" Column="31" TopLine="28"/>
       </Position5>
       <Position6>
         <Filename Value="displaydlg.pas"/>
-        <Caret Line="9" Column="30"/>
+        <Caret Line="31" Column="8" TopLine="28"/>
       </Position6>
       <Position7>
         <Filename Value="displaydlg.pas"/>
-        <Caret Line="56" Column="12" TopLine="24"/>
+        <Caret Line="50" Column="15" TopLine="28"/>
       </Position7>
       <Position8>
-        <Filename Value="displaydlg.pas"/>
-        <Caret Line="10" Column="31"/>
+        <Filename Value="maindlg.pas"/>
+        <Caret Line="38" Column="14" TopLine="32"/>
       </Position8>
       <Position9>
-        <Filename Value="displaydlg.pas"/>
-        <Caret Line="47" Column="31" TopLine="28"/>
+        <Filename Value="maindlg.pas"/>
+        <Caret Line="12" Column="22"/>
       </Position9>
       <Position10>
         <Filename Value="displaydlg.pas"/>
-        <Caret Line="31" Column="8" TopLine="28"/>
+        <Caret Line="55" Column="33" TopLine="30"/>
       </Position10>
       <Position11>
-        <Filename Value="displaydlg.pas"/>
-        <Caret Line="50" Column="15" TopLine="28"/>
-      </Position11>
-      <Position12>
-        <Filename Value="maindlg.pas"/>
-        <Caret Line="38" Column="14" TopLine="32"/>
-      </Position12>
-      <Position13>
         <Filename Value="maindlg.pas"/>
         <Caret Line="12" Column="22"/>
+      </Position11>
+      <Position12>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="63" TopLine="33"/>
+      </Position12>
+      <Position13>
+        <Filename Value="displaydlg.pas"/>
+        <Caret Line="62" Column="41" TopLine="36"/>
       </Position13>
       <Position14>
         <Filename Value="displaydlg.pas"/>
-        <Caret Line="55" Column="33" TopLine="30"/>
+        <Caret Line="47" Column="10" TopLine="37"/>
       </Position14>
       <Position15>
-        <Filename Value="maindlg.pas"/>
-        <Caret Line="12" Column="22"/>
-      </Position15>
-      <Position16>
-        <Filename Value="displaydlg.pas"/>
-        <Caret Line="63" TopLine="33"/>
-      </Position16>
-      <Position17>
-        <Filename Value="displaydlg.pas"/>
-        <Caret Line="62" Column="41" TopLine="36"/>
-      </Position17>
-      <Position18>
-        <Filename Value="displaydlg.pas"/>
-        <Caret Line="47" Column="10" TopLine="37"/>
-      </Position18>
-      <Position19>
         <Filename Value="displaydlg.pas"/>
         <Caret Line="21" Column="5" TopLine="5"/>
+      </Position15>
+      <Position16>
+        <Filename Value="maindlg.pas"/>
+        <Caret Line="253" Column="14" TopLine="246"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\ATOMEK.Controls\controls.segmentdisplay.pas"/>
+        <Caret Line="90" TopLine="75"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\ATOMEK.Controls\controls.segmentdisplay.pas"/>
+        <Caret Line="575" Column="27" TopLine="530"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\ATOMEK.Controls\controls.segmentdisplay.pas"/>
+        <Caret Line="236" Column="26" TopLine="223"/>
       </Position19>
       <Position20>
         <Filename Value="maindlg.pas"/>
-        <Caret Line="253" Column="14" TopLine="246"/>
+        <Caret Line="191" TopLine="166"/>
       </Position20>
       <Position21>
-        <Filename Value="..\ATOMEK.Controls\controls.segmentdisplay.pas"/>
-        <Caret Line="90" TopLine="75"/>
+        <Filename Value="maindlg.pas"/>
+        <Caret Line="189" Column="34" TopLine="117"/>
       </Position21>
       <Position22>
         <Filename Value="..\ATOMEK.Controls\controls.segmentdisplay.pas"/>
-        <Caret Line="575" Column="27" TopLine="530"/>
+        <Caret Line="90" TopLine="75"/>
       </Position22>
       <Position23>
-        <Filename Value="..\ATOMEK.Controls\controls.segmentdisplay.pas"/>
-        <Caret Line="236" Column="26" TopLine="223"/>
+        <Filename Value="maindlg.pas"/>
+        <Caret Line="190" Column="3" TopLine="163"/>
       </Position23>
       <Position24>
         <Filename Value="maindlg.pas"/>
-        <Caret Line="191" TopLine="166"/>
+        <Caret Line="177" Column="38" TopLine="163"/>
       </Position24>
       <Position25>
         <Filename Value="maindlg.pas"/>
-        <Caret Line="189" Column="34" TopLine="117"/>
+        <Caret Line="189" Column="41" TopLine="164"/>
       </Position25>
       <Position26>
-        <Filename Value="..\ATOMEK.Controls\controls.segmentdisplay.pas"/>
-        <Caret Line="90" TopLine="75"/>
+        <Filename Value="maindlg.pas"/>
+        <Caret Line="13"/>
       </Position26>
       <Position27>
         <Filename Value="maindlg.pas"/>
-        <Caret Line="190" Column="3" TopLine="163"/>
+        <Caret Line="297" TopLine="295"/>
       </Position27>
       <Position28>
         <Filename Value="maindlg.pas"/>
-        <Caret Line="177" Column="38" TopLine="163"/>
+        <Caret Line="296" TopLine="294"/>
       </Position28>
       <Position29>
         <Filename Value="maindlg.pas"/>
-        <Caret Line="189" Column="41" TopLine="164"/>
+        <Caret Line="294" TopLine="294"/>
       </Position29>
+      <Position30>
+        <Filename Value="maindlg.pas"/>
+        <Caret Line="59" TopLine="38"/>
+      </Position30>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>
