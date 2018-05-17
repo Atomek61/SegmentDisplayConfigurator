@@ -6,10 +6,9 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, SynHighlighterPas, SynEdit, Forms, Controls,
-  Graphics, Dialogs, StdCtrls, ExtCtrls, ColorBox, BGRABitmap, BGRABitmapTypes,
-  BGRACanvas, BGRAPath, BGRASvg, BGRACanvas2D, BGRAUnits,
-  Controls.SegmentDisplay, fgl, LCLType, StrUtils, Clipbrd,
-  BGRAGradientScanner, BGRATransform, SingleValueFrm, Types.Led, PreviewDlg;
+  Graphics, Dialogs, StdCtrls, ExtCtrls,
+  Controls.SegmentDisplay, LCLType, StrUtils, Clipbrd,
+  BGRAGradientScanner, SingleValueFrm, Types.Led;
 
 type
 
@@ -74,7 +73,6 @@ type
     procedure FormCreate(Sender: TObject);
     procedure MainDialogSizeConstraintsChange(Sender: TObject);
   private
-    FCodeFormatSettings :TFormatSettings;
     procedure OnDisplayChanged(Sender :TObject);
     procedure OnGapRatioChanged(Sender :TObject);
     procedure OnModuleRatioChanged(Sender :TObject);
@@ -120,7 +118,7 @@ const
 implementation
 
 uses
-  Math, DisplayExamplesDlg;
+  DisplayExamplesDlg;
 
 {$R *.lfm}
 

@@ -1,12 +1,12 @@
 object PreviewDialog: TPreviewDialog
-  Left = 555
+  Left = 495
   Height = 128
   Top = 367
-  Width = 306
+  Width = 366
   BorderIcons = [biSystemMenu]
   Caption = 'Preview'
   ClientHeight = 128
-  ClientWidth = 306
+  ClientWidth = 366
   FormStyle = fsStayOnTop
   OnCreate = FormCreate
   LCLVersion = '1.8.2.0'
@@ -15,10 +15,10 @@ object PreviewDialog: TPreviewDialog
     Left = 0
     Height = 32
     Top = 96
-    Width = 306
+    Width = 366
     Align = alBottom
     ClientHeight = 32
-    ClientWidth = 306
+    ClientWidth = 366
     TabOrder = 0
     Visible = False
     object Button1: TButton

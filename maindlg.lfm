@@ -1,7 +1,7 @@
 object MainDialog: TMainDialog
-  Left = 395
+  Left = 425
   Height = 356
-  Top = 186
+  Top = 181
   Width = 882
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
@@ -34,7 +34,7 @@ object MainDialog: TMainDialog
         '8.8.8.'
         '88:88'
         '8.8.8.8.8.8.8.8.8.8.8.8.8.'
-        '8888-88-88 88:88:88.888'
+        '88888888888 88:88:88.888'
       )
       OnChange = ComboBoxModulesChange
       OnKeyDown = EditModulesKeyDown
