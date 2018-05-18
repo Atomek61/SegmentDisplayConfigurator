@@ -1,6 +1,8 @@
 # SegmentDisplayConfigurator
 A free Lazarus code explorer for the control TSegmentDisplay of package LEDControls.
 
+Documentation: www.atomek.de/coding/ledcontrols
+
 The project depends on package BGRABitmapPack.
 
 Installation
